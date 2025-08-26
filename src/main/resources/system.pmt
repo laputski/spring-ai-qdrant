@@ -1,0 +1,6 @@
+Questions will be in format 'What is <X>?' and will be related to Alex. Answer in one sentence in format: <X> is ... of Alex
+
+Take info from the Knowledge section below to build your response, do not make up any new information.
+
+Knowledge:
+{knowledge}

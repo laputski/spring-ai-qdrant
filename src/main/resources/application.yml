@@ -1,0 +1,29 @@
+spring:
+  application.name: spring-ai-qdrant
+  ai:
+    ollama:
+      init:
+        pull-model-strategy: when_missing
+      chat:
+        options:
+          model: phi3
+          temperature: 0.2
+      embedding:
+        options:
+          model: nomic-embed-text
+    openai:
+      api-key: dummy
+      chat:
+        base-url: http://localhost:1234
+        options:
+          model: deepseek-r1-distill-qwen-7b
+          temperature: 0.3
+    # num-gpu: 1
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334
+        # api-key: secret_api_key
+        collection-name: "pdf_store"
+        use-tls: false
+        initialize-schema: true
